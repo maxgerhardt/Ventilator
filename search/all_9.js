@@ -6,6 +6,6 @@ var searchData=
   ['int32_63',['Int32',['../classDebug_1_1Variable_1_1Int32.html',1,'Debug::Variable']]],
   ['interface_64',['Interface',['../classDebug_1_1Interface.html',1,'Debug']]],
   ['interpolant_65',['Interpolant',['../classInterpolant.html',1,'']]],
-  ['interpolant_3c_20pinch_5fvalves_5fcal_5fsize_20_3e_66',['Interpolant&lt; pinch_valves_cal_size &gt;',['../classInterpolant.html',1,'']]],
+  ['interpolant_3c_20pinchvalvescalsize_20_3e_66',['Interpolant&lt; PinchValvesCalSize &gt;',['../classInterpolant.html',1,'']]],
   ['interrupts_67',['Interrupts',['../classInterrupts.html',1,'']]]
 ];
