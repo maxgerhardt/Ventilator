@@ -13,5 +13,6 @@ var searchData=
   ['controllerhistory_38',['ControllerHistory',['../classControllerHistory.html',1,'']]],
   ['controllerstate_39',['ControllerState',['../structControllerState.html',1,'']]],
   ['count_40',['count',['../classDebug_1_1Variable_1_1Registry.html#a98155604e45658d55d8a455a615f58a4',1,'Debug::Variable::Registry']]],
-  ['crcstruct_41',['CrcStruct',['../structCrcStruct.html',1,'']]]
+  ['crcstruct_41',['CrcStruct',['../structCrcStruct.html',1,'']]],
+  ['customlogger_42',['CustomLogger',['../namespaceCustomLogger.html',1,'']]]
 ];

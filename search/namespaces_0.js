@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flash_306',['Flash',['../namespaceFlash.html',1,'']]]
+  ['customlogger_307',['CustomLogger',['../namespaceCustomLogger.html',1,'']]]
 ];
