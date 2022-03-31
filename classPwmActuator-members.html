@@ -62,15 +62,20 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Buzzer Member List</div>  </div>
+<div class="title">PwmActuator Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="classBuzzer.html">Buzzer</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="classPwmActuator.html">PwmActuator</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>initialize</b>(uint32_t cpu_frequency_hz) (defined in <a class="el" href="classBuzzer.html">Buzzer</a>)</td><td class="entry"><a class="el" href="classBuzzer.html">Buzzer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>off</b>() (defined in <a class="el" href="classBuzzer.html">Buzzer</a>)</td><td class="entry"><a class="el" href="classBuzzer.html">Buzzer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>on</b>(float volume) (defined in <a class="el" href="classBuzzer.html">Buzzer</a>)</td><td class="entry"><a class="el" href="classBuzzer.html">Buzzer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Actuator</b>(const char *name, const char *help, float cal_0=0.0f, float cal_1=1.0f) (defined in <a class="el" href="classActuator.html">Actuator</a>)</td><td class="entry"><a class="el" href="classActuator.html">Actuator</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>Actuator</b>(const char *name, const char *help, std::array&lt; float, ActuatorsCalSize &gt; calibration) (defined in <a class="el" href="classActuator.html">Actuator</a>)</td><td class="entry"><a class="el" href="classActuator.html">Actuator</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>calibration_</b> (defined in <a class="el" href="classActuator.html">Actuator</a>)</td><td class="entry"><a class="el" href="classActuator.html">Actuator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>get_value</b>(float input) (defined in <a class="el" href="classActuator.html">Actuator</a>)</td><td class="entry"><a class="el" href="classActuator.html">Actuator</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>initialize_pwm</b>(Frequency cpu_frequency) (defined in <a class="el" href="classPwmActuator.html">PwmActuator</a>)</td><td class="entry"><a class="el" href="classPwmActuator.html">PwmActuator</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>LinkCalibration</b>(NVParams::Handler *nv_params, const uint16_t offset) (defined in <a class="el" href="classActuator.html">Actuator</a>)</td><td class="entry"><a class="el" href="classActuator.html">Actuator</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>PwmActuator</b>(const PwmPin pin, const Frequency pwm_freq, const char *name, const char *help, float cal_0=0.0f, float cal_1=1.0f) (defined in <a class="el" href="classPwmActuator.html">PwmActuator</a>)</td><td class="entry"><a class="el" href="classPwmActuator.html">PwmActuator</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>set</b>(const float value) (defined in <a class="el" href="classPwmActuator.html">PwmActuator</a>)</td><td class="entry"><a class="el" href="classPwmActuator.html">PwmActuator</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

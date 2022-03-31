@@ -63,6 +63,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classHalApi-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -74,12 +75,10 @@ Collaboration diagram for HalApi:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHalApi__coll__graph.png" border="0" usemap="#HalApi_coll__map" alt="Collaboration graph"/></div>
 <map name="HalApi_coll__map" id="HalApi_coll__map">
-<area shape="rect" title=" " alt="" coords="185,95,251,121"/>
-<area shape="rect" href="classPSOL.html" title="\TODO: generalize to be instantiable (dbg var prefixes, etc..)" alt="" coords="5,5,60,32"/>
-<area shape="rect" href="classPWM.html" title="\TODO: make this an explicit singleton?" alt="" coords="84,5,139,32"/>
-<area shape="rect" href="classLEDIndicators.html" title=" " alt="" coords="163,5,273,32"/>
-<area shape="rect" href="classBuzzer.html" title=" " alt="" coords="298,5,365,32"/>
-<area shape="rect" href="classADC.html" title="\TODO: could be explicit singleton?" alt="" coords="389,5,439,32"/>
+<area shape="rect" title=" " alt="" coords="107,95,172,121"/>
+<area shape="rect" href="classPWM.html" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="classLEDIndicators.html" title=" " alt="" coords="84,5,195,32"/>
+<area shape="rect" href="classADC.html" title="\TODO: could be explicit singleton?" alt="" coords="219,5,270,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -143,24 +142,24 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>TESTDebugGetOutgo
 void&#160;</td><td class="memItemRight" valign="bottom"><b>TESTDebugPutIncomingData</b> (const char *data, uint16_t len)</td></tr>
 <tr class="separator:a373a1030d827993da8f1449de598b3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a05e0d168325fcb2ef5fc592e2c02f8a0"><td class="memItemLeft" align="right" valign="top"><a id="a05e0d168325fcb2ef5fc592e2c02f8a0"></a>
+static <a class="el" href="classFrequency.html">Frequency</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetCpuFreq</b> ()</td></tr>
+<tr class="separator:a05e0d168325fcb2ef5fc592e2c02f8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a191ed6740c91d57c0a54acbe56b33a5d"><td class="memItemLeft" align="right" valign="top"><a id="a191ed6740c91d57c0a54acbe56b33a5d"></a>
 <a class="el" href="classADC.html">ADC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHalApi.html#a191ed6740c91d57c0a54acbe56b33a5d">adc</a></td></tr>
 <tr class="memdesc:a191ed6740c91d57c0a54acbe56b33a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">\TODO: likely these should not even be members <br /></td></tr>
 <tr class="separator:a191ed6740c91d57c0a54acbe56b33a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4f769a666faecf062d9f80a783fd2fc"><td class="memItemLeft" align="right" valign="top"><a id="ab4f769a666faecf062d9f80a783fd2fc"></a>
-<a class="el" href="classBuzzer.html">Buzzer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>buzzer</b></td></tr>
-<tr class="separator:ab4f769a666faecf062d9f80a783fd2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec591d54194ba1746e25065cfa7bca90"><td class="memItemLeft" align="right" valign="top"><a id="aec591d54194ba1746e25065cfa7bca90"></a>
-<a class="el" href="classPSOL.html">PSOL</a>&#160;</td><td class="memItemRight" valign="bottom"><b>psol</b></td></tr>
-<tr class="separator:aec591d54194ba1746e25065cfa7bca90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae94b395baaf77419bc06b64b559c025"><td class="memItemLeft" align="right" valign="top"><a id="aae94b395baaf77419bc06b64b559c025"></a>
 <a class="el" href="classLEDIndicators.html">LEDIndicators</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LEDs</b></td></tr>
 <tr class="separator:aae94b395baaf77419bc06b64b559c025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6564c3cd898729f71fde805cf59cfcf"><td class="memItemLeft" align="right" valign="top"><a id="af6564c3cd898729f71fde805cf59cfcf"></a>
-<a class="el" href="classPWM.html">PWM</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pwm</b></td></tr>
-<tr class="separator:af6564c3cd898729f71fde805cf59cfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb5d88af81e238cb553d55420ad27d0"><td class="memItemLeft" align="right" valign="top"><a id="a3bb5d88af81e238cb553d55420ad27d0"></a>
+<a class="el" href="classPWM.html">PWM</a>&#160;</td><td class="memItemRight" valign="bottom"><b>buzzer</b> {PwmPin::Buzzer, kilohertz(2.4f)}</td></tr>
+<tr class="separator:a3bb5d88af81e238cb553d55420ad27d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/Ventilator/Ventilator/software/controller/lib/hal/hal.h</li>

@@ -111,43 +111,82 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>cumulated_service
 <tr class="memitem:a5fe007f436feff635ea9c1d973b5e940"><td class="memItemLeft" align="right" valign="top"><a id="a5fe007f436feff635ea9c1d973b5e940"></a>
 <a class="el" href="struct__VentParams.html">VentParams</a>&#160;</td><td class="memItemRight" valign="bottom"><b>last_settings</b> = VentParams_init_default</td></tr>
 <tr class="separator:a5fe007f436feff635ea9c1d973b5e940"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8955caa561e9d606d1dc7de574476463"><td class="memItemLeft" align="right" valign="top">std::array&lt; float, PinchValvesCalSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>blower_pinch_cal</b></td></tr>
-<tr class="separator:a8955caa561e9d606d1dc7de574476463"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b05b998a8041b3bc5942986109e0572"><td class="memItemLeft" align="right" valign="top">std::array&lt; float, PinchValvesCalSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>exhale_pinch_cal</b></td></tr>
-<tr class="separator:a2b05b998a8041b3bc5942986109e0572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0d3f2dab37024b91eae34309aed78b"><td class="memItemLeft" align="right" valign="top">std::array&lt; float, ActuatorsCalSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNVParams_1_1Structure.html#a3a0d3f2dab37024b91eae34309aed78b">blower_pinch_cal</a></td></tr>
+<tr class="memdesc:a3a0d3f2dab37024b91eae34309aed78b"><td class="mdescLeft">&#160;</td><td class="mdescRight">\TODO: though it makes sense to have functional values during prototyping, we should consider  <a href="structNVParams_1_1Structure.html#a3a0d3f2dab37024b91eae34309aed78b">More...</a><br /></td></tr>
+<tr class="separator:a3a0d3f2dab37024b91eae34309aed78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc276b42575ba43ddb974a376dcc2f3"><td class="memItemLeft" align="right" valign="top">std::array&lt; float, ActuatorsCalSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>exhale_pinch_cal</b></td></tr>
+<tr class="separator:a5cc276b42575ba43ddb974a376dcc2f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8adcb8c2a734a3910bc4a444f0770453"><td class="memItemLeft" align="right" valign="top">std::array&lt; float, ActuatorsCalSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>blower_cal</b></td></tr>
+<tr class="separator:a8adcb8c2a734a3910bc4a444f0770453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a807471b26efcee0a7c101e35abd20972"><td class="memItemLeft" align="right" valign="top">std::array&lt; float, ActuatorsCalSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>psol_cal</b></td></tr>
+<tr class="separator:a807471b26efcee0a7c101e35abd20972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8955caa561e9d606d1dc7de574476463"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8955caa561e9d606d1dc7de574476463">&#9670;&nbsp;</a></span>blower_pinch_cal</h2>
+<a id="a8adcb8c2a734a3910bc4a444f0770453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8adcb8c2a734a3910bc4a444f0770453">&#9670;&nbsp;</a></span>blower_cal</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;float, PinchValvesCalSize&gt; NVParams::Structure::blower_pinch_cal</td>
+          <td class="memname">std::array&lt;float, ActuatorsCalSize&gt; NVParams::Structure::blower_cal</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{0.0000f, 0.0410f, 0.0689f, 0.0987f,</div>
-<div class="line">                                                         0.1275f, 0.1590f, 0.1932f, 0.2359f,</div>
-<div class="line">                                                         0.2940f, 0.3988f, 1.0000f}</div>
+<b>Initial value:</b><div class="fragment"><div class="line">{0,    0.1f, 0.2f, 0.3f, 0.4f, 0.5f,</div>
+<div class="line">                                                 0.6f, 0.7f, 0.8f, 0.9f, 1.f}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a2b05b998a8041b3bc5942986109e0572"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b05b998a8041b3bc5942986109e0572">&#9670;&nbsp;</a></span>exhale_pinch_cal</h2>
+<a id="a3a0d3f2dab37024b91eae34309aed78b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0d3f2dab37024b91eae34309aed78b">&#9670;&nbsp;</a></span>blower_pinch_cal</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;float, PinchValvesCalSize&gt; NVParams::Structure::exhale_pinch_cal</td>
+          <td class="memname">std::array&lt;float, ActuatorsCalSize&gt; NVParams::Structure::blower_pinch_cal</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{0.0000f, 0.0410f, 0.0689f, 0.0987f,</div>
-<div class="line">                                                         0.1275f, 0.1590f, 0.1932f, 0.2359f,</div>
-<div class="line">                                                         0.2940f, 0.3988f, 1.0000f}</div>
+<div class="line">                                                       0.1275f, 0.1590f, 0.1932f, 0.2359f,</div>
+<div class="line">                                                       0.2940f, 0.3988f, 1.0000f}</div>
+</div><!-- fragment -->
+<p>\TODO: though it makes sense to have functional values during prototyping, we should consider </p>
+
+</div>
+</div>
+<a id="a5cc276b42575ba43ddb974a376dcc2f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc276b42575ba43ddb974a376dcc2f3">&#9670;&nbsp;</a></span>exhale_pinch_cal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;float, ActuatorsCalSize&gt; NVParams::Structure::exhale_pinch_cal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{0.0000f, 0.0410f, 0.0689f, 0.0987f,</div>
+<div class="line">                                                       0.1275f, 0.1590f, 0.1932f, 0.2359f,</div>
+<div class="line">                                                       0.2940f, 0.3988f, 1.0000f}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a807471b26efcee0a7c101e35abd20972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a807471b26efcee0a7c101e35abd20972">&#9670;&nbsp;</a></span>psol_cal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;float, ActuatorsCalSize&gt; NVParams::Structure::psol_cal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{0.35f, 0.39f, 0.43f, 0.47f, 0.51f, 0.55f,</div>
+<div class="line">                                               0.59f, 0.63f, 0.67f, 0.71f, 0.75f}</div>
 </div><!-- fragment -->
 </div>
 </div>

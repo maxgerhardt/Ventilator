@@ -1,3 +1,15 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classAlarmPriority.html" title=" " alt="" coords="5,5,113,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,183,80,209"/>
+<area shape="rect" id="node2" href="$classAlarmManager.html" title=" " alt="" coords="166,5,285,32"/>
+<area shape="rect" id="node3" href="$classBreathSignalsTest.html" title=" " alt="" coords="156,56,295,83"/>
+<area shape="rect" id="node4" href="$classGuiStateContainer.html" title=" " alt="" coords="155,107,296,133"/>
+<area shape="rect" id="node5" href="$classLatchingAlarm.html" title=" " alt="" coords="167,157,283,184"/>
+<area shape="rect" id="node10" href="$classLatchingAlarmTest.html" title=" " alt="" coords="154,208,297,235"/>
+<area shape="rect" id="node11" href="$classLoggerTest.html" title=" " alt="" coords="179,259,271,285"/>
+<area shape="rect" id="node12" href="$classPatientDetachedAlarmTest.html" title=" " alt="" coords="128,309,323,336"/>
+<area shape="rect" id="node13" href="$classSimpleClock.html" title="Clock class that emit current datetime in a given interval." alt="" coords="174,360,277,387"/>
+<area shape="rect" id="node6" href="$classMaxPressureAlarm.html" title=" " alt="" coords="382,81,527,108"/>
+<area shape="rect" id="node7" href="$classPatientDetachedAlarm.html" title=" " alt="" coords="371,132,539,159"/>
+<area shape="rect" id="node8" href="$classPipExceededAlarm.html" title=" " alt="" coords="383,183,527,209"/>
+<area shape="rect" id="node9" href="$classPipNotReachedAlarm.html" title=" " alt="" coords="375,233,535,260"/>
 </map>
