@@ -95,8 +95,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9c5f85188c5844e9c9b784a146af8a33"><td class="memItemLeft" align="right" valign="top"><a id="a9c5f85188c5844e9c9b784a146af8a33"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>VenturiFlowSensor</b> (const char *name, const char *help_supplement, <a class="el" href="classPressureSensor.html">PressureSensor</a> *pressure_sensor, <a class="el" href="classLength.html">Length</a> venturi_port_diameter, <a class="el" href="classLength.html">Length</a> venturi_choke_diameter, float venturi_correction)</td></tr>
 <tr class="separator:a9c5f85188c5844e9c9b784a146af8a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20c95bd66ca7fe38c376339d7406360f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVolumetricFlow.html">VolumetricFlow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVenturiFlowSensor.html#a20c95bd66ca7fe38c376339d7406360f">read</a> (const <a class="el" href="classHalApi.html">HalApi</a> &amp;hal_api, float air_density) const override</td></tr>
-<tr class="separator:a20c95bd66ca7fe38c376339d7406360f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d5a93277c45f2de96b895f5353dcd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVolumetricFlow.html">VolumetricFlow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVenturiFlowSensor.html#a97d5a93277c45f2de96b895f5353dcd3">read</a> (float air_density) const override</td></tr>
+<tr class="separator:a97d5a93277c45f2de96b895f5353dcd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9d5120fd70584536cd8b697d65ab5f8"><td class="memItemLeft" align="right" valign="top"><a id="ab9d5120fd70584536cd8b697d65ab5f8"></a>
 <a class="el" href="classVolumetricFlow.html">VolumetricFlow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVenturiFlowSensor.html#ab9d5120fd70584536cd8b697d65ab5f8">pressure_delta_to_flow</a> (<a class="el" href="classPressure.html">Pressure</a> delta, float air_density) const</td></tr>
 <tr class="memdesc:ab9d5120fd70584536cd8b697d65ab5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is exposed as static so the math can be tested without HAL. <br /></td></tr>
@@ -114,8 +114,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a2cd5e73d670cd411b1333a73d6d6beac inherit pro_attribs_classFlowSensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a20c95bd66ca7fe38c376339d7406360f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20c95bd66ca7fe38c376339d7406360f">&#9670;&nbsp;</a></span>read()</h2>
+<a id="a97d5a93277c45f2de96b895f5353dcd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d5a93277c45f2de96b895f5353dcd3">&#9670;&nbsp;</a></span>read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,19 +126,9 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classVolumetricFlow.html">VolumetricFlow</a> VenturiFlowSensor::read </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classHalApi.html">HalApi</a> &amp;&#160;</td>
-          <td class="paramname"><em>hal_api</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>air_density</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"><em>air_density</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>

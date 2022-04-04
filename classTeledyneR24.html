@@ -94,22 +94,22 @@ Collaboration diagram for TeledyneR24:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abcac8c1db90192ef5139677f4b4993d2"><td class="memItemLeft" align="right" valign="top"><a id="abcac8c1db90192ef5139677f4b4993d2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TeledyneR24</b> (const char *name, const char *help_supplement, AnalogPin pin)</td></tr>
-<tr class="separator:abcac8c1db90192ef5139677f4b4993d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e71ff93e5a7e59bc6c6e3186a0f0fa5"><td class="memItemLeft" align="right" valign="top"><a id="a5e71ff93e5a7e59bc6c6e3186a0f0fa5"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classHalApi.html">HalApi</a> &amp;hal_api, <a class="el" href="classPressure.html">Pressure</a> p_ambient) const override</td></tr>
-<tr class="separator:a5e71ff93e5a7e59bc6c6e3186a0f0fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680ae561e076cc8144b64bdee6201fc5"><td class="memItemLeft" align="right" valign="top"><a id="a680ae561e076cc8144b64bdee6201fc5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TeledyneR24</b> (const char *name, const char *help_supplement, const <a class="el" href="structGPIO_1_1AdcChannel.html">GPIO::AdcChannel</a> &amp;channel, <a class="el" href="classADC.html">ADC</a> *adc)</td></tr>
+<tr class="separator:a680ae561e076cc8144b64bdee6201fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a533f73d0d187e2d7e0df5d84b1334977"><td class="memItemLeft" align="right" valign="top"><a id="a533f73d0d187e2d7e0df5d84b1334977"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (<a class="el" href="classPressure.html">Pressure</a> p_ambient) const override</td></tr>
+<tr class="separator:a533f73d0d187e2d7e0df5d84b1334977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classAnalogSensor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAnalogSensor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classAnalogSensor.html">AnalogSensor</a></td></tr>
-<tr class="memitem:a57bb34652653a00e1731de54d14cdf5c inherit pub_methods_classAnalogSensor"><td class="memItemLeft" align="right" valign="top"><a id="a57bb34652653a00e1731de54d14cdf5c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AnalogSensor</b> (const char *name, const char *help_supplement, AnalogPin pin)</td></tr>
-<tr class="separator:a57bb34652653a00e1731de54d14cdf5c inherit pub_methods_classAnalogSensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5683c4d561c8d272e2d732bd6fdc3264 inherit pub_methods_classAnalogSensor"><td class="memItemLeft" align="right" valign="top"><a id="a5683c4d561c8d272e2d732bd6fdc3264"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_zero</b> (const <a class="el" href="classHalApi.html">HalApi</a> &amp;hal_api)</td></tr>
-<tr class="separator:a5683c4d561c8d272e2d732bd6fdc3264 inherit pub_methods_classAnalogSensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67534da88ec340e9c56caa4ec179a29c inherit pub_methods_classAnalogSensor"><td class="memItemLeft" align="right" valign="top"><a id="a67534da88ec340e9c56caa4ec179a29c"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>read_diff_volts</b> (const <a class="el" href="classHalApi.html">HalApi</a> &amp;hal_api) const</td></tr>
-<tr class="separator:a67534da88ec340e9c56caa4ec179a29c inherit pub_methods_classAnalogSensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57902c342ff32e58416134aceae7f20f inherit pub_methods_classAnalogSensor"><td class="memItemLeft" align="right" valign="top"><a id="a57902c342ff32e58416134aceae7f20f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AnalogSensor</b> (const char *name, const char *help_supplement, const <a class="el" href="structGPIO_1_1AdcChannel.html">GPIO::AdcChannel</a> &amp;channel, <a class="el" href="classADC.html">ADC</a> *adc)</td></tr>
+<tr class="separator:a57902c342ff32e58416134aceae7f20f inherit pub_methods_classAnalogSensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7471ef15e58fe8772aca9b2dfc76e411 inherit pub_methods_classAnalogSensor"><td class="memItemLeft" align="right" valign="top"><a id="a7471ef15e58fe8772aca9b2dfc76e411"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_zero</b> ()</td></tr>
+<tr class="separator:a7471ef15e58fe8772aca9b2dfc76e411 inherit pub_methods_classAnalogSensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199b1392d8e94669b9450a664792c1c4 inherit pub_methods_classAnalogSensor"><td class="memItemLeft" align="right" valign="top"><a id="a199b1392d8e94669b9450a664792c1c4"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>read_diff_volts</b> () const</td></tr>
+<tr class="separator:a199b1392d8e94669b9450a664792c1c4 inherit pub_methods_classAnalogSensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

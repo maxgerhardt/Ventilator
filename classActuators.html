@@ -63,23 +63,12 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classActuators-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Actuators Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for Actuators:</div>
-<div class="dyncontent">
-<div class="center"><img src="classActuators__coll__graph.png" border="0" usemap="#Actuators_coll__map" alt="Collaboration graph"/></div>
-<map name="Actuators_coll__map" id="Actuators_coll__map">
-<area shape="rect" title=" " alt="" coords="51,291,135,317"/>
-<area shape="rect" href="classFrequency.html" title=" " alt="" coords="48,187,137,213"/>
-<area shape="rect" href="classUnitsDetail_1_1ArithScalar.html" title=" " alt="" coords="5,96,180,137"/>
-<area shape="rect" href="classUnitsDetail_1_1Scalar.html" title=" " alt="" coords="15,5,171,47"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -89,29 +78,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9e445f83fb602cff0079f41444261ee"><td class="memItemLeft" align="right" valign="top"><a id="ab9e445f83fb602cff0079f41444261ee"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ready</b> ()</td></tr>
 <tr class="separator:ab9e445f83fb602cff0079f41444261ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5508d105b5e6e97a11eab64533806c39"><td class="memItemLeft" align="right" valign="top"><a id="a5508d105b5e6e97a11eab64533806c39"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>link</b> (<a class="el" href="classNVParams_1_1Handler.html">NVParams::Handler</a> *nv_params, uint16_t blower_pinch_cal_offset, uint16_t exhale_pinch_cal_offset, uint16_t blower_cal_offset, uint16_t psol_cal_offset)</td></tr>
-<tr class="separator:a5508d105b5e6e97a11eab64533806c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40856e3eaa6e5ed6c2d4ae65a49fddee"><td class="memItemLeft" align="right" valign="top"><a id="a40856e3eaa6e5ed6c2d4ae65a49fddee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (<a class="el" href="classFrequency.html">Frequency</a> cpu_frequency)</td></tr>
-<tr class="separator:a40856e3eaa6e5ed6c2d4ae65a49fddee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd3793e39f0bec1a9ef925d3ccbf5514"><td class="memItemLeft" align="right" valign="top"><a id="afd3793e39f0bec1a9ef925d3ccbf5514"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="classFrequency.html">Frequency</a> cpu_frequency, <a class="el" href="classNVParams_1_1Handler.html">NVParams::Handler</a> *nv_params, uint16_t blower_pinch_cal_offset, uint16_t exhale_pinch_cal_offset, uint16_t blower_cal_offset, uint16_t psol_cal_offset)</td></tr>
+<tr class="separator:afd3793e39f0bec1a9ef925d3ccbf5514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab18840130eb1b4a3ddf596f41dcd6bff"><td class="memItemLeft" align="right" valign="top"><a id="ab18840130eb1b4a3ddf596f41dcd6bff"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> (const <a class="el" href="structActuatorsState.html">ActuatorsState</a> &amp;desired_state)</td></tr>
 <tr class="separator:ab18840130eb1b4a3ddf596f41dcd6bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a165ada124517cd4424bfb49f46d995c1"><td class="memItemLeft" align="right" valign="top"><a id="a165ada124517cd4424bfb49f46d995c1"></a>
-static constexpr <a class="el" href="classFrequency.html">Frequency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActuators.html#a165ada124517cd4424bfb49f46d995c1">BlowerFreq</a> = kilohertz(20)</td></tr>
-<tr class="memdesc:a165ada124517cd4424bfb49f46d995c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: add/find a better rationale for this, maybe with the resulting response time/resolution. <br /></td></tr>
-<tr class="separator:a165ada124517cd4424bfb49f46d995c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad179d94751c53f3dc81e4f9178398cd3"><td class="memItemLeft" align="right" valign="top"><a id="ad179d94751c53f3dc81e4f9178398cd3"></a>
-static constexpr <a class="el" href="classFrequency.html">Frequency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActuators.html#ad179d94751c53f3dc81e4f9178398cd3">PSolFreq</a> = kilohertz(5)</td></tr>
-<tr class="memdesc:ad179d94751c53f3dc81e4f9178398cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: find the rationale behind this. <br /></td></tr>
-<tr class="separator:ad179d94751c53f3dc81e4f9178398cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a79e8e2944a5a7ae12c8a3c309b29fc20"><td class="memItemLeft" align="right" valign="top"><a id="a79e8e2944a5a7ae12c8a3c309b29fc20"></a>
+std::optional&lt; <a class="el" href="classPwmActuator.html">PwmActuator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buzzer</b> {std::nullopt}</td></tr>
+<tr class="separator:a79e8e2944a5a7ae12c8a3c309b29fc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/runner/work/Ventilator/Ventilator/software/controller/lib/actuators/actuators.h</li>
+<li>/home/runner/work/Ventilator/Ventilator/software/controller/lib/core/actuators.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -63,6 +63,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classADC-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ADC Class Reference</div>  </div>
@@ -73,17 +74,37 @@ $(function() {
  <a href="classADC.html#details">More...</a></p>
 
 <p><code>#include &lt;adc.h&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for ADC:</div>
+<div class="dyncontent">
+<div class="center"><img src="classADC__coll__graph.png" border="0" usemap="#ADC_coll__map" alt="Collaboration graph"/></div>
+<map name="ADC_coll__map" id="ADC_coll__map">
+<area shape="rect" title="\TODO: could be explicit singleton?" alt="" coords="67,276,118,303"/>
+<area shape="rect" href="classVoltage.html" title=" " alt="" coords="57,187,128,213"/>
+<area shape="rect" href="classUnitsDetail_1_1ArithScalar.html" title=" " alt="" coords="5,96,180,137"/>
+<area shape="rect" href="classUnitsDetail_1_1Scalar.html" title=" " alt="" coords="21,5,164,47"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8862fcab8ada7a3e2a7238910873bd2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classADC.html#a8862fcab8ada7a3e2a7238910873bd2f">initialize</a> (<a class="el" href="classFrequency.html">Frequency</a> cpu_frequency)</td></tr>
 <tr class="separator:a8862fcab8ada7a3e2a7238910873bd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9db4a9239f5ea58f73d2a2c2d95c947"><td class="memItemLeft" align="right" valign="top"><a id="ab9db4a9239f5ea58f73d2a2c2d95c947"></a>
-<a class="el" href="classVoltage.html">Voltage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (AnalogPin pin) const</td></tr>
-<tr class="separator:ab9db4a9239f5ea58f73d2a2c2d95c947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c91dd7b3eb2265654de405aa51a423a"><td class="memItemLeft" align="right" valign="top"><a id="a8c91dd7b3eb2265654de405aa51a423a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TESTSetAnalogPin</b> (AnalogPin pin, <a class="el" href="classVoltage.html">Voltage</a> value)</td></tr>
-<tr class="separator:a8c91dd7b3eb2265654de405aa51a423a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255c5cf4795fcf8d50727c5391af57ac"><td class="memItemLeft" align="right" valign="top"><a id="a255c5cf4795fcf8d50727c5391af57ac"></a>
+<a class="el" href="classVoltage.html">Voltage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (uint8_t channel) const</td></tr>
+<tr class="separator:a255c5cf4795fcf8d50727c5391af57ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f7c6cec9dc0fcb899e8558d35c62df"><td class="memItemLeft" align="right" valign="top"><a id="ab0f7c6cec9dc0fcb899e8558d35c62df"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>add_channel</b> (uint8_t channel)</td></tr>
+<tr class="separator:ab0f7c6cec9dc0fcb899e8558d35c62df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac419a00e2dba512281d387c065d378f5"><td class="memItemLeft" align="right" valign="top"><a id="ac419a00e2dba512281d387c065d378f5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TESTSetAnalogPin</b> (uint8_t channel, <a class="el" href="classVoltage.html">Voltage</a> value)</td></tr>
+<tr class="separator:ac419a00e2dba512281d387c065d378f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ab69bf10ec36fe70dfef083bce474795a"><td class="memItemLeft" align="right" valign="top"><a id="ab69bf10ec36fe70dfef083bce474795a"></a>
+static constexpr <a class="el" href="classVoltage.html">Voltage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>VoltageRange</b> {volts(3.3f)}</td></tr>
+<tr class="separator:ab69bf10ec36fe70dfef083bce474795a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>\TODO: could be explicit singleton? </p>

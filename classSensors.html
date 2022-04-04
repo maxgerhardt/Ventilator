@@ -63,21 +63,61 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classSensors-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Sensors Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for Sensors:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSensors__coll__graph.png" border="0" usemap="#Sensors_coll__map" alt="Collaboration graph"/></div>
+<map name="Sensors_coll__map" id="Sensors_coll__map">
+<area shape="rect" title=" " alt="" coords="56,365,129,392"/>
+<area shape="rect" href="classADC.html" title="\TODO: could be explicit singleton?" alt="" coords="67,276,118,303"/>
+<area shape="rect" href="classVoltage.html" title=" " alt="" coords="57,187,128,213"/>
+<area shape="rect" href="classUnitsDetail_1_1ArithScalar.html" title=" " alt="" coords="5,96,180,137"/>
+<area shape="rect" href="classUnitsDetail_1_1Scalar.html" title=" " alt="" coords="21,5,164,47"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a36647e097a461a58f82928731b0dc5ac"><td class="memItemLeft" align="right" valign="top"><a id="a36647e097a461a58f82928731b0dc5ac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>calibrate</b> ()</td></tr>
+<tr class="memitem:a043354616bcc4508f5fbfd4a85ff2cd3"><td class="memItemLeft" align="right" valign="top"><a id="a043354616bcc4508f5fbfd4a85ff2cd3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="classFrequency.html">Frequency</a> cpu_frequency)</td></tr>
+<tr class="separator:a043354616bcc4508f5fbfd4a85ff2cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36647e097a461a58f82928731b0dc5ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensors.html#a36647e097a461a58f82928731b0dc5ac">calibrate</a> ()</td></tr>
 <tr class="separator:a36647e097a461a58f82928731b0dc5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93927df9127ca0ae32b8df557f17d5fe"><td class="memItemLeft" align="right" valign="top"><a id="a93927df9127ca0ae32b8df557f17d5fe"></a>
 <a class="el" href="structSensorReadings.html">SensorReadings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_readings</b> () const</td></tr>
 <tr class="separator:a93927df9127ca0ae32b8df557f17d5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a563e9afe5e5c66f097594f7094fb0ff4"><td class="memItemLeft" align="right" valign="top"><a id="a563e9afe5e5c66f097594f7094fb0ff4"></a>
+<a class="el" href="classADC.html">ADC</a>&#160;</td><td class="memItemRight" valign="bottom"><b>adc</b></td></tr>
+<tr class="separator:a563e9afe5e5c66f097594f7094fb0ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a36647e097a461a58f82928731b0dc5ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36647e097a461a58f82928731b0dc5ac">&#9670;&nbsp;</a></span>calibrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sensors::calibrate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TODO: store calibration in EEPROM and have this called only upon user request to make certain the vent is not linked to a patient </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/Ventilator/Ventilator/software/controller/lib/core/sensors.h</li>
 </ul>

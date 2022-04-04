@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['serialize_5fvalue_332',['serialize_value',['../classDebug_1_1Variable_1_1FnVar32.html#a9c3e5f2071a91ef2d01d935b552bc32a',1,'Debug::Variable::FnVar32::serialize_value()'],['../classDebug_1_1Variable_1_1Primitive32.html#af442517bab9460734804eb84a02fdc3b',1,'Debug::Variable::Primitive32::serialize_value()'],['../classDebug_1_1Variable_1_1FloatArray.html#a68d27d5584558b6ef1d7474de0c11060',1,'Debug::Variable::FloatArray::serialize_value()'],['../classDebug_1_1Variable_1_1String.html#af7a7285053b0607a65f11114b6e9de1b',1,'Debug::Variable::String::serialize_value()'],['../classDebug_1_1Variable_1_1Base.html#afc9ead7c70adb87bb4eb45ef070d0a7a',1,'Debug::Variable::Base::serialize_value()']]],
-  ['set_5fperiod_333',['set_period',['../classDebug_1_1Trace.html#a41b53646fe50d9d88c30576862e11f81',1,'Debug::Trace']]],
-  ['set_5fpin_5fmode_334',['set_pin_mode',['../classLEDIndicators.html#a8f7393f8b8e04f1b1fe241b0b805ee04',1,'LEDIndicators::set_pin_mode()'],['../classPWM.html#a40fdfcc3b11c1a33aaac31d143f98a3b',1,'PWM::set_pin_mode()']]],
-  ['start_335',['start',['../classDebug_1_1Trace.html#aa57e2f561be2f02069d8fd5f2671e598',1,'Debug::Trace']]],
-  ['stop_336',['stop',['../classDebug_1_1Trace.html#a9f87185b1ecf494aac21f0b1e8b865c3',1,'Debug::Trace']]]
+  ['read_348',['read',['../classVenturiFlowSensor.html#a97d5a93277c45f2de96b895f5353dcd3',1,'VenturiFlowSensor']]],
+  ['register_5fvariable_349',['register_variable',['../classDebug_1_1Variable_1_1Registry.html#a7ac33c383d238bf03464ef9532976439',1,'Debug::Variable::Registry']]],
+  ['running_350',['running',['../classDebug_1_1Trace.html#a51722fc8b0ceb84e4caa4af1d7f2b88f',1,'Debug::Trace']]]
 ];
