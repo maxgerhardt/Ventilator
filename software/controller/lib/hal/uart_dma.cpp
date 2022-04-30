@@ -1,24 +1,16 @@
 /* Copyright 2020-2022, RespiraWorks
-
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
-
     http://www.apache.org/licenses/LICENSE-2.0
-
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
 */
 
-#if defined(BARE_STM32) && defined(UART_VIA_DMA)
-
 #include "uart_dma.h"
-
-#include "hal_stm32_regs.h"
 
 // STM32 UART3 driver based on DMA transfers.
 
@@ -29,7 +21,7 @@ limitations under the License.
 // CPU is notified via interrupt.
 
 // This driver also provides Character Match callback on match_char reception.
-
+#if defined(UART_VIA_DMA)
 // Performs UART initialization
 void UartDma::initialize(const Frequency cpu_frequency, const Frequency baud, DMA::Base dma,
                          DMA::Channel tx_channel, DMA::Channel rx_channel) {
@@ -41,9 +33,9 @@ void UartDma::initialize(const Frequency cpu_frequency, const Frequency baud, DM
   uart_->control3.bitfield.dma_disable_on_rx_error = 1;  // DMA disabled following a reception error
   uart_->control2.bitfield.rx_timeout_enable = 0;        // Disable receive timeout feature
   uart_->control2.bitfield.addr = match_char_;           // set match char
+  uart_->control3.bitfield.error_interrupt = 1;          // enable interrupt on error
 
-  uart_->control3.bitfield.error_interrupt = 1;  // enable interrupt on error
-  uart_->request.bitfield.flush_rx = 1;          // Clear RXNE flag before clearing other flags
+  uart_->request.bitfield.flush_rx = 1;  // Clear RXNE flag before clearing other flags
 
   // Clear error flags.
   uart_->interrupt_clear.bitfield.framing_error_clear = 1;
@@ -54,6 +46,7 @@ void UartDma::initialize(const Frequency cpu_frequency, const Frequency baud, DM
   uart_->control_reg1.bitfield.rx_enable = 1;  // Enable receiver
   uart_->control_reg1.bitfield.enable = 1;     // enable uart
 
+  // TODO Improve DMA abstraction to get rid of those
   // TODO enable parity checking?
 
   rx_dma_.emplace(dma, rx_channel);
@@ -82,11 +75,11 @@ bool UartDma::rx_in_progress() const {
   return rx_in_progress_;
 }
 
-// Sets up UART to transfer [length] characters from [buf]
+// Sets up UART to transfer [length] characters from [buffer]
 // Returns false if DMA transmission is in progress, does not
 // interrupt previous transmission.
 // Returns true if no transmission is in progress
-bool UartDma::start_tx(uint8_t *buffer, uint32_t length, TxListener *txl) {
+bool UartDma::start_tx(uint8_t *buffer, size_t length, TxListener *txl) {
   if (tx_in_progress()) {
     return false;
   }
@@ -110,7 +103,7 @@ void UartDma::stop_tx() {
   }
 }
 
-// Sets up reception of exactly [length] chars from UART3 into [buf]
+// Sets up reception of exactly [length] chars from UART3 into [buffer]
 // [timeout] is the number of baud rate bits for which RX line is
 // allowed to be idle before issuing timeout error.
 // on_character_match callback will be called if a match_char is seen on the RX
@@ -131,7 +124,7 @@ void UartDma::stop_tx() {
 // Returns false if reception is in progress, new reception is not setup.
 // Returns true if no reception is in progress and new reception was setup.
 
-bool UartDma::start_rx(uint8_t *buffer, uint32_t length, RxListener *rxl) {
+bool UartDma::start_rx(uint8_t *buffer, size_t length, RxListener *rxl) {
   // UART3 reception happens on DMA1 channel 3
   if (rx_in_progress()) {
     return false;
@@ -175,9 +168,8 @@ static bool rx_error() {
 }
 
 // ISR handler for the UART peripheral.
-// Calls on_rx_error and on_character_match functions of the rx_listener_ as
-// those events are provided by UART peripheral. on_rx_complete is called by DMA
-// ISR
+// Calls on_rx_error and on_character_match functions of the rx_listener_ as those events are
+// provided by UART peripheral. on_rx_complete is called by the DMA ISR
 void UartDma::UART_interrupt_handler() {
   if (rx_error()) {
     RxError e = RxError::Unknown;
@@ -205,7 +197,6 @@ void UartDma::UART_interrupt_handler() {
   if (character_match_interrupt()) {
     uart_->request.bitfield.flush_rx = 1;  // Clear RXNE flag before clearing other flags
     uart_->interrupt_clear.bitfield.char_match_clear = 1;  // Clear char match flag
-
     if (rx_listener_) {
       rx_listener_->on_character_match();
     }
@@ -243,5 +234,26 @@ void UartDma::DMA_rx_interrupt_handler() {
   }
   rx_dma_->ClearInterrupt(DMA::Interrupt::Global);
 }
+
+#else
+void UartDma::initialize(const Frequency cpu_frequency, const Frequency baud, DMA::Base dma,
+                         DMA::Channel tx_channel, DMA::Channel rx_channel){};
+
+bool UartDma::start_tx(uint8_t *buffer, size_t length, TxListener *txl) { return true; }
+bool UartDma::start_rx(uint8_t *buffer, size_t length, RxListener *rxl) { return true; }
+
+bool UartDma::tx_in_progress() const { return tx_in_progress_; }
+bool UartDma::rx_in_progress() const { return rx_in_progress_; }
+
+void UartDma::stop_tx() {}
+void UartDma::stop_rx() {}
+
+uint32_t UartDma::rx_bytes_left() { return 0; }
+
+void UartDma::enable_character_match() {}
+
+void UartDma::DMA_rx_interrupt_handler(){};
+void UartDma::DMA_tx_interrupt_handler(){};
+void UartDma::UART_interrupt_handler(){};
 
 #endif

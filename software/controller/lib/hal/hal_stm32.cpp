@@ -41,6 +41,7 @@ Abbreviations [RM], [DS], etc are defined in hal/README.md.
 #include "vars.h"
 #include "watchdog.h"
 #if defined(UART_VIA_DMA)
+#include "framing_spec_chars.h"
 #include "uart_dma.h"
 #endif
 
@@ -244,7 +245,7 @@ static UART debug_uart(Uart2Base);
 #if defined(UART_VIA_DMA)
 // The character used for char_match is entirely arbitrary and will need to be a constant from
 // common, to allow using it in GUI as well for framing (once we get framing)
-static UartDma dma_uart(Uart3Base, 0xE2);
+static UartDma dma_uart(Uart3Base, FramingMark);
 #endif
 // The UART that talks to the rPi uses the following pins:
 //    PB10 - TX
