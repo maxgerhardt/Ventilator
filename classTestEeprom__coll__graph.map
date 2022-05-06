@@ -1,7 +1,5 @@
 <map id="TestEeprom" name="TestEeprom">
-<area shape="rect" id="node1" title="\TODO: move mock class out to tests rather than main code" alt="" coords="113,289,211,316"/>
-<area shape="rect" id="node2" href="$classI2Ceeprom.html" title=" " alt="" coords="115,213,209,240"/>
-<area shape="rect" id="node3" href="$classI2C_1_1Channel.html" title=" " alt="" coords="110,124,214,151"/>
-<area shape="rect" id="node4" href="$classCircularBuffer.html" title=" " alt="" coords="5,5,164,47"/>
-<area shape="rect" id="node5" href="$structI2C_1_1Request.html" title=" " alt="" coords="189,13,293,39"/>
+<area shape="rect" id="node1" title="\TODO: move mock class out to tests rather than main code" alt="" coords="8,171,107,197"/>
+<area shape="rect" id="node2" href="$classI2Ceeprom.html" title=" " alt="" coords="11,95,104,121"/>
+<area shape="rect" id="node3" href="$classI2C_1_1Channel.html" title=" " alt="" coords="5,5,109,32"/>
 </map>

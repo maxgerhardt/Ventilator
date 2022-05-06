@@ -1,6 +1,0 @@
-<map id="I2C::STM32Channel" name="I2C::STM32Channel">
-<area shape="rect" id="node1" title=" " alt="" coords="88,200,236,227"/>
-<area shape="rect" id="node2" href="$classI2C_1_1Channel.html" title=" " alt="" coords="110,124,214,151"/>
-<area shape="rect" id="node3" href="$classCircularBuffer.html" title=" " alt="" coords="5,5,164,47"/>
-<area shape="rect" id="node4" href="$structI2C_1_1Request.html" title=" " alt="" coords="189,13,293,39"/>
-</map>

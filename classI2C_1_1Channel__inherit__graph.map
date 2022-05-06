@@ -1,5 +1,0 @@
-<map id="I2C::Channel" name="I2C::Channel">
-<area shape="rect" id="node1" title=" " alt="" coords="109,5,213,32"/>
-<area shape="rect" id="node2" href="$classI2C_1_1STM32Channel.html" title=" " alt="" coords="5,80,153,107"/>
-<area shape="rect" id="node3" href="$classI2C_1_1TestChannel.html" title=" " alt="" coords="178,80,309,107"/>
-</map>

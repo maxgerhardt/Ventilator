@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['digitalinputpin_231',['DigitalInputPin',['../classGPIO_1_1DigitalInputPin.html',1,'GPIO']]],
-  ['digitaloutputpin_232',['DigitalOutputPin',['../classGPIO_1_1DigitalOutputPin.html',1,'GPIO']]],
-  ['duration_233',['Duration',['../classDuration.html',1,'']]]
+  ['digitalinputpin_226',['DigitalInputPin',['../classGPIO_1_1DigitalInputPin.html',1,'GPIO']]],
+  ['digitaloutputpin_227',['DigitalOutputPin',['../classGPIO_1_1DigitalOutputPin.html',1,'GPIO']]],
+  ['duration_228',['Duration',['../classDuration.html',1,'']]]
 ];
