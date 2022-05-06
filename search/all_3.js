@@ -2,7 +2,7 @@ var searchData=
 [
   ['calibrate_34',['calibrate',['../classSensors.html#a36647e097a461a58f82928731b0dc5ac',1,'Sensors']]],
   ['channel_35',['Channel',['../classI2C_1_1Channel.html',1,'I2C']]],
-  ['channelregs_36',['ChannelRegs',['../structDmaStruct_1_1ChannelRegs.html',1,'DmaStruct']]],
+  ['channelcontrol_36',['ChannelControl',['../classDMA_1_1ChannelControl.html',1,'DMA']]],
   ['circularbuffer_37',['CircularBuffer',['../classCircularBuffer.html',1,'']]],
   ['circularbuffer_3c_20uint32_5ft_2c_20buffersize_20_3e_38',['CircularBuffer&lt; uint32_t, BufferSize &gt;',['../classCircularBuffer.html',1,'']]],
   ['circularbuffer_3c_20uint8_5ft_2c_20128_20_3e_39',['CircularBuffer&lt; uint8_t, 128 &gt;',['../classCircularBuffer.html',1,'']]],

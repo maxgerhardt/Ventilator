@@ -71,18 +71,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac23fc1d6bed90b5359a1412fc2a1da71"><td class="memItemLeft" align="right" valign="top"><a id="ac23fc1d6bed90b5359a1412fc2a1da71"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UartDma</b> (UartReg *const uart, DmaReg *const dma, uint8_t tx_channel, uint8_t rx_channel, char match_char)</td></tr>
-<tr class="separator:ac23fc1d6bed90b5359a1412fc2a1da71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b4f2b6b3902e15aa2bec582e37f557e"><td class="memItemLeft" align="right" valign="top"><a id="a0b4f2b6b3902e15aa2bec582e37f557e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> (<a class="el" href="classFrequency.html">Frequency</a> cpu_frequency, <a class="el" href="classFrequency.html">Frequency</a> baud)</td></tr>
-<tr class="separator:a0b4f2b6b3902e15aa2bec582e37f557e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80e597395e934d0dadc87603454181e2"><td class="memItemLeft" align="right" valign="top"><a id="a80e597395e934d0dadc87603454181e2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>start_tx</b> (uint8_t *buf, uint32_t length, <a class="el" href="classTxListener.html">TxListener</a> *txl)</td></tr>
-<tr class="separator:a80e597395e934d0dadc87603454181e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10fbb6885713121f3b15e9db2d30e500"><td class="memItemLeft" align="right" valign="top"><a id="a10fbb6885713121f3b15e9db2d30e500"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>start_rx</b> (uint8_t *buf, uint32_t length, <a class="el" href="classRxListener.html">RxListener</a> *rxl)</td></tr>
-<tr class="separator:a10fbb6885713121f3b15e9db2d30e500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320c126c2b4bdb286140ec07a78e3a73"><td class="memItemLeft" align="right" valign="top"><a id="a320c126c2b4bdb286140ec07a78e3a73"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>UartDma</b> (UartReg *const uart, char match_char)</td></tr>
+<tr class="separator:a320c126c2b4bdb286140ec07a78e3a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301cbf224e7d0a82171b44f8794c351a"><td class="memItemLeft" align="right" valign="top"><a id="a301cbf224e7d0a82171b44f8794c351a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> (<a class="el" href="classFrequency.html">Frequency</a> cpu_frequency, <a class="el" href="classFrequency.html">Frequency</a> baud, DMA::Base dma, DMA::Channel tx_channel, DMA::Channel rx_channel)</td></tr>
+<tr class="separator:a301cbf224e7d0a82171b44f8794c351a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad180c26efe0fdf077c351f40f8a38bc4"><td class="memItemLeft" align="right" valign="top"><a id="ad180c26efe0fdf077c351f40f8a38bc4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>start_tx</b> (uint8_t *buffer, uint32_t length, <a class="el" href="classTxListener.html">TxListener</a> *txl)</td></tr>
+<tr class="separator:ad180c26efe0fdf077c351f40f8a38bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c429c3a0e56bc722d3aaad685fc7c4d"><td class="memItemLeft" align="right" valign="top"><a id="a3c429c3a0e56bc722d3aaad685fc7c4d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>start_rx</b> (uint8_t *buffer, uint32_t length, <a class="el" href="classRxListener.html">RxListener</a> *rxl)</td></tr>
+<tr class="separator:a3c429c3a0e56bc722d3aaad685fc7c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53a03d43bc5fabf88ffc1acee367a9b9"><td class="memItemLeft" align="right" valign="top"><a id="a53a03d43bc5fabf88ffc1acee367a9b9"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>tx_in_progress</b> () const</td></tr>
 <tr class="separator:a53a03d43bc5fabf88ffc1acee367a9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>

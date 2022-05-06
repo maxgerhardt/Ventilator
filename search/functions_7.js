@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['maybe_5fsample_363',['maybe_sample',['../classDebug_1_1Trace.html#a8cccef4d3b029a9732bce76e58224ce9',1,'Debug::Trace']]]
+  ['maybe_5fsample_359',['maybe_sample',['../classDebug_1_1Trace.html#a8cccef4d3b029a9732bce76e58224ce9',1,'Debug::Trace']]]
 ];
