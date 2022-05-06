@@ -1,4 +1,4 @@
 <map id="TestEeprom" name="TestEeprom">
-<area shape="rect" id="node1" title="\TODO: move mock class out to tests rather than main code" alt="" coords="5,80,104,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,104,107"/>
 <area shape="rect" id="node2" href="$classI2Ceeprom.html" title=" " alt="" coords="8,5,101,32"/>
 </map>
