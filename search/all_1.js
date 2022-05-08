@@ -13,12 +13,13 @@ var searchData=
   ['analoginputpin_14',['AnalogInputPin',['../classGPIO_1_1AnalogInputPin.html',1,'GPIO']]],
   ['analogpressuresensor_15',['AnalogPressureSensor',['../classAnalogPressureSensor.html',1,'']]],
   ['analogsensor_16',['AnalogSensor',['../classAnalogSensor.html',1,'']]],
-  ['arithscalar_17',['ArithScalar',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]],
-  ['arithscalar_3c_20duration_2c_20int64_5ft_20_3e_18',['ArithScalar&lt; Duration, int64_t &gt;',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]],
-  ['arithscalar_3c_20frequency_2c_20float_20_3e_19',['ArithScalar&lt; Frequency, float &gt;',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]],
-  ['arithscalar_3c_20length_2c_20float_20_3e_20',['ArithScalar&lt; Length, float &gt;',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]],
-  ['arithscalar_3c_20pressure_2c_20float_20_3e_21',['ArithScalar&lt; Pressure, float &gt;',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]],
-  ['arithscalar_3c_20voltage_2c_20float_20_3e_22',['ArithScalar&lt; Voltage, float &gt;',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]],
-  ['arithscalar_3c_20volume_2c_20float_20_3e_23',['ArithScalar&lt; Volume, float &gt;',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]],
-  ['arithscalar_3c_20volumetricflow_2c_20float_20_3e_24',['ArithScalar&lt; VolumetricFlow, float &gt;',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]]
+  ['append_5fhelp_17',['append_help',['../classDebug_1_1Variable_1_1Base.html#a821efec47ba5e38f7c699ccf2847fb78',1,'Debug::Variable::Base']]],
+  ['arithscalar_18',['ArithScalar',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]],
+  ['arithscalar_3c_20duration_2c_20int64_5ft_20_3e_19',['ArithScalar&lt; Duration, int64_t &gt;',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]],
+  ['arithscalar_3c_20frequency_2c_20float_20_3e_20',['ArithScalar&lt; Frequency, float &gt;',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]],
+  ['arithscalar_3c_20length_2c_20float_20_3e_21',['ArithScalar&lt; Length, float &gt;',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]],
+  ['arithscalar_3c_20pressure_2c_20float_20_3e_22',['ArithScalar&lt; Pressure, float &gt;',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]],
+  ['arithscalar_3c_20voltage_2c_20float_20_3e_23',['ArithScalar&lt; Voltage, float &gt;',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]],
+  ['arithscalar_3c_20volume_2c_20float_20_3e_24',['ArithScalar&lt; Volume, float &gt;',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]],
+  ['arithscalar_3c_20volumetricflow_2c_20float_20_3e_25',['ArithScalar&lt; VolumetricFlow, float &gt;',['../classUnitsDetail_1_1ArithScalar.html',1,'UnitsDetail']]]
 ];
